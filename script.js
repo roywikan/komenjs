@@ -5,7 +5,11 @@ function submitComment() {
     const owner = 'roywikan';
     const repo = 'komenjs';
     const path = 'comments.txt';
+    const token = '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';
     const token = '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';
+
+    // Log the token
+    console.log('Token:', token);
 
     // Encode the comment content
     const content = btoa(comment);
@@ -25,10 +29,7 @@ function submitComment() {
     .then(response => response.json())
     .then(data => {
         console.log('Comment submitted successfully:', data);
-
-        // No need to decode content here as it's a new comment
         // You can handle success here (e.g., update the UI).
-
     })
     .catch(error => console.error('Error submitting comment:', error));
 }

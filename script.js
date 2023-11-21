@@ -6,7 +6,7 @@ function submitComment() {
     const repo = 'komenjs';
     const path = 'comments.txt';
 
-    const token = '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';
+    const token = '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';
 
     // Log the token
     console.log('Token:', token);

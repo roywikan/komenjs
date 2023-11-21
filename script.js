@@ -2,10 +2,10 @@ function submitComment() {
     const comment = document.getElementById('comment').value;
 
     // Use your GitHub username, repository name, and personal access token
-    const owner = 'your-username';
-    const repo = 'your-repo-name';
+    const owner = 'roywikan';
+    const repo = 'komenjs';
     const path = 'comments.txt';
-    const token = 'your-personal-access-token';
+    const token = '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';
 
     // Encode the comment content
     const content = btoa(comment);

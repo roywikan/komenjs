@@ -25,7 +25,10 @@ function submitComment() {
     .then(response => response.json())
     .then(data => {
         console.log('Comment submitted successfully:', data);
+
+        // No need to decode content here as it's a new comment
         // You can handle success here (e.g., update the UI).
+
     })
     .catch(error => console.error('Error submitting comment:', error));
 }

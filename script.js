@@ -5,7 +5,7 @@ function submitComment() {
     const owner = 'roywikan';
     const repo = 'komenjs';
     const path = 'comments.txt';
-    const token = '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';
+    const token = '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';
 
     // Encode the comment content
     const content = btoa(comment);
